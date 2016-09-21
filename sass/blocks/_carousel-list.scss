@@ -1,0 +1,47 @@
+.carousel-list{
+	@include m1{
+		height: auto;
+		margin-bottom: 36px;
+		width: 100%;
+	}
+	@include m7{
+		margin-bottom: 0;
+	}
+	li{
+		@include m1{
+			float: none;
+			height: auto;
+			width: 100%;
+		}
+	}
+	.title-side{
+		@include m1{
+			height: auto;
+			float: none;
+			width: 100%;
+			overflow: hidden;
+		}
+		h2{
+			@include m1{
+				position: relative;
+				z-index: 1;
+				margin: 10px 0;
+				text-align: center;
+			}
+		}
+		img{
+			@include m1{
+				width: 60px;
+				left: 3px;
+				bottom: 4px;
+			}
+		}
+	}
+	.content-side{
+		@include m1{
+			float: none;
+			width: 100%;
+			padding: 10px;
+		}
+	}
+}

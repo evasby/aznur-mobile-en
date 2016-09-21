@@ -1,0 +1,81 @@
+.car-c{
+	@include m1{
+		margin: 0;
+	}
+	&.has-discount{
+		@include m1{
+			&:before{
+				display: none;
+			}
+		}
+		& > a{
+			@include m1{
+				position: relative;
+				display: block;
+				width: 100%;
+				max-width: 400px;
+				margin: 0 auto;
+				&:before{
+					background: rgba(0, 0, 0, 0) url("/bitrix/templates/main/img/Layer-36-copy.png") no-repeat scroll 0 0;
+					background-size: 100%;
+				  color: #363636;
+				  content: "Скидка на прокат!";
+				  display: block;
+				  font: italic 14px/14px Georgia,sans-serif;
+				  height: 120px;
+				  padding: 16px 14px 0 48px;
+				  position: absolute;
+				  right: 0px;
+				  text-align: center;
+				  top: 0px;
+				  width: 120px;
+				}
+			}		
+		}
+	}	
+	&__img{
+		max-width: 516px;
+		@include m1{
+			width: 100%;
+			max-width: 400px;
+		}
+	}
+	&__content{
+		@include m1{
+			height: auto;
+			text-align: center;
+		}
+	}
+	&__buttons{
+		@include m1{
+			float: none;
+			margin: 10px auto 0 auto;
+		}
+		.btn{
+			@include m1{
+				margin-bottom: 10px;
+			}
+		}
+	}
+	&__title{
+		@include m1{
+			font-size: 16px;
+		}
+	}
+	&__table-caracter-wr{
+		@include m1{
+			float: none;
+			margin: 0 auto;
+		}
+		.table-caracter{
+			@include m1{
+				margin-bottom: 15px;
+			}
+		}
+	}
+	&__price-wr{
+		@include m1{
+			margin: 0;
+		}
+	}
+}

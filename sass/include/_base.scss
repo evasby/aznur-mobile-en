@@ -1,0 +1,30 @@
+html{
+	@include m1{
+		min-width: 0;	
+	}
+}
+body{
+	& > h1{
+		@include m1{
+			font-size: 21px;
+			margin: 10px 0;
+		}
+	}
+	h2.h4{
+		@include m1{
+			font-size: 18px;
+			text-align: center;
+			margin: 10px 0;
+		}
+	}
+}
+.b{
+	@include m1{
+		margin: 0;
+	}
+}
+#itc-widget-button{
+	@include m7{
+		display: none!important;
+	}
+}

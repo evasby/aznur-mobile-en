@@ -1,0 +1,51 @@
+.header{
+.top-menu{
+	&_inner{
+		@include m1{
+			position: relative;
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			top: -100%;
+			background-color: #d23235;
+			padding: 10px 20px;
+			transition: top, 0.2s;
+			&__on{
+				top: 0;
+			}
+		}
+	}
+	&_close{
+		@include m1{
+			position: absolute;
+			z-index: 2;
+			right: 0;
+			top: 0;
+			width: 20px;
+			height: 20px;
+			display: block;
+			background:transparent url('../img/close.png') left top no-repeat;
+			cursor: pointer;
+		}
+	}
+	li{
+		@include m1{
+			border: none;
+			float: none;
+			margin: 0;
+		}
+		a{
+			@include m1{
+				padding: 0;
+				text-align: left;
+				@include link(#fff, #fff);
+			}
+		}
+	}
+	.deeper-wrap{
+		@include m1{
+			display: none;
+		}
+	}
+}
+}

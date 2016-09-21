@@ -1,0 +1,70 @@
+.catalog-main3{
+	@include m1{
+		margin-bottom: 0;
+	}
+	&__item{
+		@include m1{
+			float: none;
+			width: 100%;
+			overflow: hidden;
+			margin-bottom: 0;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #D23336;
+			.catalog-main3--2 &{
+				width: 100%;
+			}
+		}
+		a:nth-child(2){
+			@include m1{
+				display: block;
+				max-width: 202px;
+				margin: 0 auto;
+			}
+		}
+		&.has-discount{
+			&:before{
+				@include m1{
+					display: none;
+				}
+			}
+			a:nth-child(2){
+				@include m1{
+					position: relative;
+					&:before{
+						background: rgba(0, 0, 0, 0) url("/bitrix/templates/main/img/discount.png") no-repeat scroll 0 0;
+				    color: #000;
+				    content: "Скидка на прокат!";
+				    display: block;
+				    font-size: 13px;
+				    font-style: italic;
+				    height: 148px;
+				    right: -24px;
+				    line-height: 13px;
+				    padding: 35px 40px 0 70px;
+				    position: absolute;
+				    text-align: center;
+				    top: -18px;
+				    width: 148px;
+					}
+				}
+			}
+		}
+	}
+	&__title{
+		font-size: 21px;
+		@include m1{
+			margin-bottom: 10px;
+		}
+	}
+	&__img{
+		@include m1{
+			margin-bottom: 10px;
+		}
+	}
+	&__price{
+		@include m1{
+			margin-bottom: 10px;
+		}
+	}
+}

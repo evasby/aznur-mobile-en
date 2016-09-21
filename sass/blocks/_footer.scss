@@ -1,0 +1,19 @@
+.footer{
+	@include m1{
+		text-align: center;
+		height: auto;
+	}
+	.develop{
+		@include m1{
+			float: none;
+			height: auto;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.copyright{
+		@include m1{
+			margin: 0;
+		}
+	}
+}

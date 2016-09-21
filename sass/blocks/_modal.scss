@@ -1,0 +1,27 @@
+.modal{
+	.modal-dialog{
+		@include m7{
+			width: auto;
+		}
+	}
+	.modal-header{
+		@include m7{
+			padding: 18px 8px 0;
+		}
+	}
+	.modal-body{
+		@include m7{
+			padding: 17px 8px 10px;
+		}
+	}
+	label[for=exampleInputEmail1]{
+		@include m7{
+			height: 23px;
+		}
+	}
+	label[for=exampleInputEmail2]{
+		@include m7{
+			height: 23px;
+		}
+	}
+}

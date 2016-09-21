@@ -1,0 +1,29 @@
+.header{
+	@include m1{
+		height: auto;
+		position: relative;
+		z-index: 2;
+		min-width: 0;
+	}
+	.logo{
+		@include m1{
+			float: none;
+			margin: 0;
+			max-width: 169px;
+			margin: 0 auto;
+		}
+	}
+	.phone{
+		@include m1{
+			float: none;
+			text-align: center;
+			margin: 0;
+		}
+	}
+	.time-work{
+		@include m1{
+			float: none;
+			text-align: center;
+		}
+	}
+}

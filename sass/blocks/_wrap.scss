@@ -1,0 +1,12 @@
+.wrap{
+	@include m1{
+		position: relative;
+		z-index: 1;
+	}
+	h1{
+		@include m1{
+			font-size: 26px;
+			text-align: center;
+		}
+	}
+}

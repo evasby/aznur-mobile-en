@@ -1,0 +1,17 @@
+.wall{
+	li{
+		@include m7{
+			display: table;
+			border: 1px solid #DEDEE0;
+		}
+		a{
+			@include m7{
+				font-size: 14px;
+				padding: 0;
+				display: table-cell;
+				vertical-align: middle;
+				line-height: 1;
+			}
+		}
+	}
+}

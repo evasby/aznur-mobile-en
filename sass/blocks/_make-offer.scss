@@ -1,0 +1,9 @@
+.make-offer{
+	@include m1{
+		position: static!important;
+		padding: 0!important;
+		text-align: center!important;
+		margin: 10px 0 0!important;
+		font-size: 18px!important;
+	}
+}

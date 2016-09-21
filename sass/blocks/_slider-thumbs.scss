@@ -1,0 +1,35 @@
+.slider-thumbs{
+	@include m1{
+		height: auto;
+	}
+	#carousel{
+		@include m1{
+			height: auto;
+			padding: 0;
+		}
+		span{
+			@include m1{
+				margin-bottom: 10px;
+			}
+		}
+		img{
+			@include m1{
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.thumbs-vertical{
+		@include m1{
+			display: none;
+		}
+	}
+	#carousel-wrapper{
+		@include m1{
+			float: none;
+			width: 100%;
+			max-width: 400px;
+			margin: 0 auto;
+		}
+	}
+}

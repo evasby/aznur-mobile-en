@@ -1,0 +1,8 @@
+.content{
+	@include m1{
+		float: none;
+		width: 100%;
+		margin: 0;
+		padding: 0 10px;
+	}
+}

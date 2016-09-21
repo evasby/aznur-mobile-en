@@ -1,0 +1,42 @@
+.mobile-menu{
+	display: none;
+	position: fixed;
+	right: 0;
+	top: -100%;
+	z-index: 1;
+	background-color: #d23235;
+	padding: 10px 20px;
+	transition: top, 0.2s;
+	&__on{
+		top: 0;
+	}
+	@include m1{
+		display: block;
+	}
+	&_close{
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 20px;
+		height: 20px;
+		display: block;
+		background:transparent url('../img/close.png') left top no-repeat;
+		cursor: pointer;
+	}
+	&_list{
+		list-style: outside none none;
+	  margin: 0;
+	  padding: 0;
+	}
+	&_link{
+		//@include link(#363636, #d43336);
+		@include link(#fff, #fff);
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    &:hover{
+			text-decoration: none;
+    }
+	}
+}

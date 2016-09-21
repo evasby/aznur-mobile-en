@@ -1,0 +1,27 @@
+.address-wrap{
+	@include m1{
+		margin-bottom: 36px;
+	}
+	@include m7{
+		margin-bottom: 0;
+	}
+	.item{
+		@include m1{
+			float: none;
+			width: 100%;
+		}
+		.item-header{
+			@include m7{
+				padding: 10px;
+			}
+		}
+		.item-content{
+			@include m1{
+				padding: 10px;
+			}
+			@include m7{
+				font-size: 14px;
+			}
+		}
+	}
+}

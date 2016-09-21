@@ -1,0 +1,22 @@
+.sidebar{
+	@include m1{
+		float: none;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.sidebar-top{
+		@include m1{
+			min-height: 0;
+		}
+	}
+	ul.styled{
+		@include m1{
+			margin: 0;
+		}
+	}
+	.sidebar-title{
+		@include m1{
+			margin: 10px 0;
+		}
+	}
+}

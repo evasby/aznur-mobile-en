@@ -1,0 +1,59 @@
+//*********************************************************************************/
+@mixin m7 {
+  @media all and (max-width: 768px) { @content; }
+}
+@mixin m1 {
+  @media all and (max-width: 1000px) { @content; }
+}
+//*********************************************************************************/
+@mixin placeholder($color, $opacity:1){
+  &::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+    color: $color;
+    opacity: $opacity;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $color;
+    opacity: $opacity;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: $color;
+    opacity: $opacity;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: $color;
+    opacity: $opacity;
+  }
+  &::-ms-input-placeholder { /* Edge */
+    color: $color;
+    opacity: $opacity;
+  }
+  &:placeholder-shown { /* Standard one last! */
+    color: $color;
+    opacity: $opacity;
+  }
+}
+//*********************************************************************************/
+@mixin link($normal, $hover){
+  color:$normal;
+    &:link{color:$normal;};
+    &:visited{color:$normal;};
+    &:hover{color:$hover;};
+    &:active{color:$normal;}; 
+    //&:focus{color:$normal;}; 
+}
+//*********************************************************************************/
+@mixin clearfix{
+  &:before,
+  &:after{
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  &:after{
+    clear: both;
+  }
+  @include old-ie{
+    *zoom: 1;
+  }
+}

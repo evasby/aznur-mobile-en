@@ -1,0 +1,7 @@
+.b-content{
+	@include m1{
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+}

@@ -1,0 +1,39 @@
+.menu-toggle{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100%;
+	@include m1{
+		display: block;
+	}
+	&_left{
+		position: absolute;
+		z-index: 10;
+		left: 0;
+		top: 0;
+		cursor: pointer;
+		display: block;
+		background-color: #d23235;
+		color: #fff;
+		width: 90px;
+		text-align: center;
+		padding: 5px 0;
+		text-transform: uppercase;
+	}
+	&_right{
+		position: absolute;
+		z-index: 10;
+		right: 0;
+		top: 0;
+		cursor: pointer;
+		display: block;
+		background-color: #d23235;
+		color: #fff;
+		width: 90px;
+		text-align: center;
+		padding: 5px 0;
+		text-transform: uppercase;
+	}
+}
