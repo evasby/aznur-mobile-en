@@ -3040,3 +3040,17 @@
 @media all and (max-width: 768px) {
   .modal label[for=exampleInputEmail2] {
     height: 23px; } }
+
+@media all and (max-width: 1000px) {
+  .carousel_home {
+    opacity: 1 !important; } }
+
+@media all and (max-width: 1000px) {
+  .carousel_home .container > a {
+    display: block; } }
+
+@media all and (max-width: 1000px) {
+  .carousel_home .car-box {
+    position: static;
+    top: auto;
+    left: auto; } }

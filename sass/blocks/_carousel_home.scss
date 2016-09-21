@@ -1,0 +1,19 @@
+.carousel_home{
+	@include m1{
+		opacity: 1!important;
+	}
+	.container{
+		& > a{
+			@include m1{
+				display: block;
+			}
+		}
+	}
+	.car-box{
+		@include m1{
+			position: static;
+			top: auto;
+			left: auto;
+		}
+	}
+}

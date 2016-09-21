@@ -71,7 +71,7 @@ gulp.task('css', function () {
       cascade: false
     }))
     .pipe(gulp.dest('css'))
-    .pipe(gulp.dest('C:/OpenServer/domains/aznur/bitrix/templates/main/css'))
+    .pipe(gulp.dest('C:/OpenServer/domains/aznur/bitrix/templates/main/css/en'))
     //.pipe(connect.reload())
     .pipe(notify('CSS - Done!'));
 });
